@@ -53,7 +53,7 @@ client.on('message', message => {
                 //checks
                 if (idf === -1 || lidf === -1) {
                     console.log("description error");
-                    message.channel.send("Couldn't grab description data!")
+                    message.channel.send("Couldn't grab description data! Check the link above!")
                 } else if (imidf === -1 || imlidf === -1) {
                     console.log("image error");
                     message.channel.send("Couldn't grab image data!");
@@ -75,6 +75,6 @@ client.on('message', message => {
             }
         });
     } else {
-        message.channel.send("Having trouble looking stuff up? Make sure to use **Capitals** and **Underscores**!")
+        message.channel.send("Having trouble looking stuff up? Make sure to use **Capitals** and **Underscores**!\nSome wiki links just don't have descriptions!")
     }
 });
