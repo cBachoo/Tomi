@@ -24,8 +24,9 @@ client.on('message', message => {
     //basic checks
     if (!message.content.startsWith(prefix) || message.author.bot) return;
 
-    const args = message.content.slice(prefix.length).split(/ +/);
-    console.log(args);
+    const raw = message.content.slice(prefix.length); //raw input that is normalized
+    const args = raw.replace(/ /g, "_"); //turn normalized input into something that works for the apirequest
+    
 
     if (message.content !== `${prefix}help`) {
         //api request starts here
@@ -75,6 +76,6 @@ client.on('message', message => {
             }
         });
     } else {
-        message.channel.send("Having trouble looking stuff up? Make sure to use **Capitals** and **Underscores**!\nSome wiki links just don't have descriptions!")
+        message.channel.send("Having trouble looking stuff up? Make sure spelling is correct!\nSome wiki links just don't have descriptions!\nIf problem persists please contact **Bachoo#0001**");
     }
 });
