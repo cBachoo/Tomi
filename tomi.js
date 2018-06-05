@@ -65,7 +65,7 @@ client.on('message', message => {
                     //put it all together
                     var embed = new Discord.RichEmbed()
                         .setColor("99cff")
-                        .setTitle("You searched for: " + args)
+                        .setTitle("You searched for: " + raw)
                         .setFooter("Tomi developed by Bachoo#0001")
                         .setDescription("**Result**: " + desc)
                         .setThumbnail(img);
