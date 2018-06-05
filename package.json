@@ -3,8 +3,13 @@
   "version": "1.0.0",
   "description": "A discord bot that fetches information from the wizard of legend wiki",
   "main": "tomi.js",
+  "engines": {
+	"node": "8.x",
+	"npm": "*"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"start": "node tomi.js"
   },
   "author": "Bachoo",
   "license": "MIT",
