@@ -78,4 +78,10 @@ client.on('message', message => {
     } else {
         message.channel.send("Having trouble looking stuff up? Make sure spelling is correct!\nSome wiki links just don't have descriptions!\nIf problem persists please contact **Bachoo#0001**");
     }
+
+    if (message.content === `${prefix}restart`){
+        message.channel.send("Resetting...")
+        client.destroy();
+        client.login(token);
+    }
 });
