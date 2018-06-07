@@ -10,24 +10,24 @@ const client = new Discord.Client();
 //variables
 const { prefix, token } = require('./botconfig.json');
 const request = require('request');
-const fs = require('fs');
+
 
 //called when bot logs in
 client.on('ready', () => {
-    fs.appendFile('./logs.txt', `\nBot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
+    console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
     console.log(`Successfully logged in as ${client.user.tag}!`);
     client.user.setActivity(`Serving ${client.guilds.size} servers! <3`);
 });
 
 //called when the bot joins a guild.
 client.on("guildCreate", guild => {
-    fs.appendFile('./logs.txt', `\nNew guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
+    console.log(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
     client.user.setActivity(`Serving ${client.guilds.size} servers! <3`);
 });
 
 //called when the bot is removed from a guild.
 client.on("guildDelete", guild => {
-    fs.appendFile('./logs.txt', `\nI have been removed from: ${guild.name} (id: ${guild.id})`);
+    console.log(`I have been removed from: ${guild.name} (id: ${guild.id})`);
     client.user.setActivity(`Serving ${client.guilds.size} servers! <3`);
 });
 
@@ -39,9 +39,8 @@ client.on('message', message => {
 
     const raw = message.content.slice(prefix.length); //raw input that is normalized
     const args = raw.replace(/ /g, "_"); //turn normalized input into something that works for the apirequest
-    
+    //log the command
     console.log(`\nCOMMAND - ${message.content}`);
-    fs.appendFile('./logs.txt', `\nCOMMAND - ${message.content}`);
 
     if (message.content === `${prefix}restart`) {
         client.destroy();
