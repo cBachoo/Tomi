@@ -22,13 +22,13 @@ client.on('ready', () => {
 //called when the bot joins a guild.
 client.on("guildCreate", guild => {
     fs.appendFile('./logs.txt', `\nNew guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
-    client.user.setActivity(`Serving ${client.guilds.size} servers`);
+    client.user.setActivity(`Serving ${client.guilds.size} servers! <3`);
 });
 
 //called when the bot is removed from a guild.
 client.on("guildDelete", guild => {
     fs.appendFile('./logs.txt', `\nI have been removed from: ${guild.name} (id: ${guild.id})`);
-    client.user.setActivity(`Serving ${client.guilds.size} servers`);
+    client.user.setActivity(`Serving ${client.guilds.size} servers! <3`);
 });
 
 
@@ -39,7 +39,8 @@ client.on('message', message => {
 
     const raw = message.content.slice(prefix.length); //raw input that is normalized
     const args = raw.replace(/ /g, "_"); //turn normalized input into something that works for the apirequest
-
+    
+    console.log(`\nCOMMAND - ${message.content}`);
     fs.appendFile('./logs.txt', `\nCOMMAND - ${message.content}`);
 
     if (message.content === `${prefix}restart`) {
