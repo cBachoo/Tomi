@@ -14,7 +14,7 @@ const request = require('request');
 //called when bot logs in
 client.on('ready', () => {
     console.log(`Successfully logged in as ${client.user.tag}!`);
-    client.user.setActivity('with some Arcana!');
+    client.user.setActivity(`Serving ${client.guilds.size} servers! <3`);
 });
 //log in using our secret token of secrets
 client.login(token);
