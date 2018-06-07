@@ -10,14 +10,27 @@ const client = new Discord.Client();
 //variables
 const { prefix, token } = require('./botconfig.json');
 const request = require('request');
+const fs = require('fs');
 
 //called when bot logs in
 client.on('ready', () => {
+    fs.appendFile('./logs.txt', `\nBot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
     console.log(`Successfully logged in as ${client.user.tag}!`);
     client.user.setActivity(`Serving ${client.guilds.size} servers! <3`);
 });
-//log in using our secret token of secrets
-client.login(token);
+
+//called when the bot joins a guild.
+client.on("guildCreate", guild => {
+    fs.appendFile('./logs.txt', `\nNew guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
+    client.user.setActivity(`Serving ${client.guilds.size} servers`);
+});
+
+//called when the bot is removed from a guild.
+client.on("guildDelete", guild => {
+    fs.appendFile('./logs.txt', `\nI have been removed from: ${guild.name} (id: ${guild.id})`);
+    client.user.setActivity(`Serving ${client.guilds.size} servers`);
+});
+
 
 //message handler
 client.on('message', message => {
@@ -26,9 +39,16 @@ client.on('message', message => {
 
     const raw = message.content.slice(prefix.length); //raw input that is normalized
     const args = raw.replace(/ /g, "_"); //turn normalized input into something that works for the apirequest
-    
 
-    if (message.content !== `${prefix}help`) {
+    fs.appendFile('./logs.txt', `\nCOMMAND - ${message.content}`);
+
+    if (message.content === `${prefix}restart`) {
+        client.destroy();
+        client.login(token);
+        return;
+    } else if (message.content === `${prefix}help`) {
+        message.channel.send("Having trouble looking stuff up? Make sure spelling is correct!\nSome wiki links just don't have descriptions!\nIf problem persists please contact **Bachoo#0001**");
+    } else {
         //api request starts here
         const baseurl = "https://wizardoflegend.gamepedia.com";
         const query = "/api.php?action=query&format=json&prop=revisions%7Cpageimages&rvprop=content&rvsection=1&rvparse&piprop=original&titles="
@@ -75,13 +95,15 @@ client.on('message', message => {
                 }
             }
         });
-    } else {
-        message.channel.send("Having trouble looking stuff up? Make sure spelling is correct!\nSome wiki links just don't have descriptions!\nIf problem persists please contact **Bachoo#0001**");
     }
 
-    if (message.content === `${prefix}restart`){
+    if (message.content === `${prefix}restart`) {
         message.channel.send("Resetting...")
         client.destroy();
         client.login(token);
     }
 });
+
+//should always be at the bottom of our code
+//log in using our secret token of secrets
+client.login(token);
