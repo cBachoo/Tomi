@@ -47,7 +47,7 @@ client.on('message', message => {
         client.login(token);
         return;
     } else if (message.content === `${prefix}help`) {
-        message.channel.send("Having trouble looking stuff up? Make sure spelling is correct!\nSome wiki links just don't have descriptions!\nIf problem persists please contact **Bachoo#0001**");
+        message.channel.send("Having trouble looking stuff up? Make sure spelling is correct!(Capitalization Matters!)\nSome wiki links just don't have descriptions!\nIf problem persists please contact **Bachoo#0001**");
     } else {
         //api request starts here
         const baseurl = "https://wizardoflegend.gamepedia.com";
@@ -80,7 +80,9 @@ client.on('message', message => {
                     message.channel.send("Couldn't grab image data!");
                 } else {
                     //extract texts
-                    var desc = body.slice(idf + 3, lidf);
+                    var rawdesc = body.slice(idf + 3, lidf);
+                    //final string formatting for description
+                    var desc = rawdesc.replace(/<[^>]+>/g, '');
                     var img = body.slice(imidf + 21, imlidf - 3);
                     //put it all together
                     var embed = new Discord.RichEmbed()
