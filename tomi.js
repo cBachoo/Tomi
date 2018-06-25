@@ -38,6 +38,8 @@ client.on('message', message => {
     if (!message.content.startsWith(prefix) || message.author.bot) return;
 
     const raw = message.content.slice(prefix.length); //raw input that is normalized
+    if (message.content.slice(prefix.length) === "") return; 
+    console.log("we did the thing")
     const args = raw.replace(/ /g, "_"); //turn normalized input into something that works for the apirequest
     //log the command
     console.log(`\nCOMMAND - ${message.content}`);
@@ -46,8 +48,10 @@ client.on('message', message => {
         client.destroy();
         client.login(token);
         return;
+    } else if (message.content === `${prefix}invite`) {
+        message.channel.send("Invite me to your server with this link!: <https://discordapp.com/oauth2/authorize?client_id=453371651611033600&permissions=19456&scope=bot>");
     } else if (message.content === `${prefix}help`) {
-        message.channel.send("Having trouble looking stuff up? Make sure spelling is correct!(Capitalization Matters!)\nSome wiki links just don't have descriptions!\nIf problem persists please contact **Bachoo#0001**");
+        message.channel.send("Having trouble looking stuff up? Make sure spelling is correct!(Capitalization Matters!)\nSome wiki links just don't have descriptions!If problem persists please contact **Bachoo#0001**");
     } else {
         //api request starts here
         const baseurl = "https://wizardoflegend.gamepedia.com";
@@ -88,7 +92,7 @@ client.on('message', message => {
                     var embed = new Discord.RichEmbed()
                         .setColor("99cff")
                         .setTitle("You searched for: " + raw)
-                        .setFooter("Tomi developed by Bachoo#0001")
+                        .setFooter("Tomi developed and maintained by Bachoo#0001")
                         .setDescription("**Result**: " + desc)
                         .setThumbnail(img);
 
