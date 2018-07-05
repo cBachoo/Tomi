@@ -6,10 +6,12 @@
 //libraries
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const fs = require('fs');
 
 //variables
 const { prefix, token } = require('./botconfig.json');
 const request = require('request');
+const helptxt = fs.readFileSync("./help.txt");
 
 
 //called when bot logs in
@@ -37,13 +39,23 @@ client.on('message', message => {
     //basic checks
     if (!message.content.startsWith(prefix) || message.author.bot) return;
 
-    const raw = message.content.slice(prefix.length); //raw input that is normalized
+    const rawmessage = message.content.slice(prefix.length); //raw input with no editing
+    console.log(raw);
+
+    var rawarry = rawmessage.toLocaleLowerCase().split(' ');
+    for (var x = 0; x < rawarry.length; x++){
+        if (rawarry[x].valueOf() === 'of') {
+            //do nothing
+        } else {
+            rawarry[x] = rawarry[x].charAt(0).toLocaleUpperCase() + rawarry[x].substr(1);
+        }
+    }
+    var raw = rawarry.join(' '); //properly uppercased formatted input
+
     if (message.content.slice(prefix.length) === "") return; 
-    console.log("we did the thing")
     const args = raw.replace(/ /g, "_"); //turn normalized input into something that works for the apirequest
     //log the command
     console.log(`\nCOMMAND - ${message.content}`);
-
     if (message.content === `${prefix}restart`) {
         client.destroy();
         client.login(token);
@@ -51,7 +63,14 @@ client.on('message', message => {
     } else if (message.content === `${prefix}invite`) {
         message.channel.send("Invite me to your server with this link!: <https://discordapp.com/oauth2/authorize?client_id=453371651611033600&permissions=19456&scope=bot>");
     } else if (message.content === `${prefix}help`) {
-        message.channel.send("Having trouble looking stuff up? Make sure spelling is correct!(Capitalization Matters!)\nSome wiki links just don't have descriptions!If problem persists please contact **Bachoo#0001**");
+        var hembled = new Discord.RichEmbed()
+            .setColor("99cff")
+            .setFooter("Tomi developed and maintained by Bachoo#0001")
+            .setDescription(helptxt)
+            .setThumbnail(client.user.displayAvatarURL);
+
+        message.channel.send(hembled);
+
     } else {
         //api request starts here
         const baseurl = "https://wizardoflegend.gamepedia.com";

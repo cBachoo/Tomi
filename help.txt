@@ -1,0 +1,7 @@
+**My Current commands are:**
+
+t!help
+t!invite
+t!______ <---- this can be any relic/arcana in the game! (note: "outfit" and "melee" commands are in the works!)
+
+if you are having problems with a certain command, or issue with the bot in general, please DM **Bachoo#0001**!
