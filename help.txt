@@ -1,7 +1,8 @@
 **My Current commands are:**
 
-t!help
-t!invite
+t!help - This current command!
+t!invite - A link that you can invite me to your server!
+t!patch or t!patchnotes - The latest updates on the bot!
 t!______ <---- this can be any relic/arcana in the game! (note: "outfit" and "melee" commands are in the works!)
 
 if you are having problems with a certain command, or issue with the bot in general, please DM **Bachoo#0001**!

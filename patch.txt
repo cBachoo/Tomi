@@ -1,0 +1,9 @@
+__**Tomi Release Update – July 10th, 2018 (Side note: Birthday Edition)**__
+
+Hey guys, back with another Tomi update! Thanks for using the bot. We got a lot of changes, that none of you guys will notice because it’s all backend, but its good to be transparent on whats goin’ on with the bot y’know?
+
+**=== Changes === **
+
+:radio_button: Complete rehaul of the backend for Tomi, this includes the API request that Tomi does to the wiki to grab information. How Tomi manipulates the information, so he doesn’t give you incomprehensible nonsense, but the info you actually want. And FINALLY, Tomi doesn’t use string manipulation anymore, but object manipulation (its faster trust me). 
+
+:radio_button: The wiki should be updated overall soon:tm:, but it’s pretty notable so I’m writing it down here, basically everything in the wiki should have a basic description, others can feel free to go in the wiki and edit the descriptions to me more detailed if they want.

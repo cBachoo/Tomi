@@ -57,20 +57,30 @@ client.on('message', message => {
     const args = raw.replace(/ /g, "_"); //turn normalized input into something that works for the apirequest
     //log the command
     console.log(`\nCOMMAND - ${message.content}`);
+    //================ COMMANDS START HERE ====================================
     if (message.content === `${prefix}restart`) {
         client.destroy();
         client.login(token);
         return;
+    } else if (message.content === `${prefix}patch` || message.content === `${prefix}patchnotes`) {
+        var patch = fs.readFileSync("./patch.txt");
+        var pembed = new Discord.RichEmbed()
+            .setColor("99cff")
+            .setFooter("Tomi developed and maintained by Bachoo#0001")
+            .setDescription(patch)
+            .setThumbnail(client.user.displayAvatarURL)
+
+        message.channel.send(pembed);
     } else if (message.content === `${prefix}invite`) {
         message.channel.send("Invite me to your server with this link!: <https://discordapp.com/oauth2/authorize?client_id=453371651611033600&permissions=19456&scope=bot>");
     } else if (message.content === `${prefix}help`) {
-        var hembled = new Discord.RichEmbed()
+        var hembed = new Discord.RichEmbed()
             .setColor("99cff")
             .setFooter("Tomi developed and maintained by Bachoo#0001")
             .setDescription(helptxt)
             .setThumbnail(client.user.displayAvatarURL);
 
-        message.channel.send(hembled);
+        message.channel.send(hembed);
 
     } else { //any command for finding relics/arcana, default command essentially
         //api request starts here
@@ -126,12 +136,6 @@ client.on('message', message => {
                 console.error(err);
             })
 
-    }
-    //secret restart command
-    if (message.content === `${prefix}restart`) {
-        message.channel.send("Resetting...")
-        client.destroy();
-        client.login(token);
     }
 });
 
