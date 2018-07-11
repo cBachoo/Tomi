@@ -7,10 +7,11 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const fs = require('fs');
+const request = require('request-promise');
+const cheerio = require('cheerio');
 
 //variables
 const { prefix, token } = require('./botconfig.json');
-const request = require('request');
 const helptxt = fs.readFileSync("./help.txt");
 
 
@@ -40,10 +41,9 @@ client.on('message', message => {
     if (!message.content.startsWith(prefix) || message.author.bot) return;
 
     const rawmessage = message.content.slice(prefix.length); //raw input with no editing
-    console.log(raw);
 
     var rawarry = rawmessage.toLocaleLowerCase().split(' ');
-    for (var x = 0; x < rawarry.length; x++){
+    for (var x = 0; x < rawarry.length; x++) {
         if (rawarry[x].valueOf() === 'of') {
             //do nothing
         } else {
@@ -52,7 +52,7 @@ client.on('message', message => {
     }
     var raw = rawarry.join(' '); //properly uppercased formatted input
 
-    if (message.content.slice(prefix.length) === "") return; 
+    if (message.content.slice(prefix.length) === "") return;
     const args = raw.replace(/ /g, "_"); //turn normalized input into something that works for the apirequest
     //log the command
     console.log(`\nCOMMAND - ${message.content}`);
@@ -71,10 +71,10 @@ client.on('message', message => {
 
         message.channel.send(hembled);
 
-    } else {
+    } else { //any command for finding relics/arcana, default command essentially
         //api request starts here
         const baseurl = "https://wizardoflegend.gamepedia.com";
-        const query = "/api.php?action=query&format=json&prop=revisions%7Cpageimages&rvprop=content&rvsection=1&rvparse&piprop=original&titles="
+        const query = "/api.php?action=query&format=json&prop=revisions%7Cpageimages&indexpageids=1&rvprop=content&rvsection=1&rvparse&piprop=original&titles="
         var titles = args;
         //final request
         var apirequest = baseurl + query + titles;
@@ -83,31 +83,33 @@ client.on('message', message => {
         message.channel.send("<https://wizardoflegend.gamepedia.com/" + args + ">");
 
         //grab stuff from wiki
-        request({
-            url: apirequest,
-        }, function (error, response, body) {
-            if (!error) {
-                //description
-                var idf = body.indexOf("<p>"); //idf = indexof
-                var lidf = body.lastIndexOf("\\n"); //lidf = lastindeof
-                //images
-                var imidf = body.indexOf("original"); //imidf = image index of
-                var imlidf = body.lastIndexOf("width");//imlidf = image last index of
+        var options = { //the options for the actual request that we're making
+            uri: apirequest, //uri is the site we wanna scrape
+            transform: function (body) {
+                return cheerio.load(body);
+            }
+        };
+        //the request
+        request(options)
+            .then(($) => {
+                var rawinfo = $('body').text(); //raw pull info
+                var body = JSON.parse(rawinfo); //still raw info but its now an object that I can manipulate
+                var pageid = body.query.pageids; //needed to go furthur into the object
+
+                //grab description data
+                var rawdesc = JSON.stringify(body.query.pages[pageid].revisions);
+                var idf = rawdesc.indexOf("Description");
+                var lidf = rawdesc.indexOf("}]");
+                //finished description
+                var desc = rawdesc.slice(idf + 33, lidf - 3);
+                //finished image
+                var img = body.query.pages[pageid].original.source;
 
                 //checks
-                if (idf === -1 || lidf === -1) {
-                    console.log("description error");
-                    message.channel.send("Couldn't grab description data! Check the link above!")
-                } else if (imidf === -1 || imlidf === -1) {
-                    console.log("image error");
-                    message.channel.send("Couldn't grab image data!");
+                if (idf === -1 || lidf === -1 || desc === "") {
+                    console.log("Description error");
+                    message.channel.send("Couldn't grab description data! Check the link above!");
                 } else {
-                    //extract texts
-                    var rawdesc = body.slice(idf + 3, lidf);
-                    //final string formatting for description
-                    var desc = rawdesc.replace(/<[^>]+>/g, '');
-                    var img = body.slice(imidf + 21, imlidf - 3);
-                    //put it all together
                     var embed = new Discord.RichEmbed()
                         .setColor("99cff")
                         .setTitle("You searched for: " + raw)
@@ -118,10 +120,13 @@ client.on('message', message => {
                     //send the embed
                     message.channel.send(embed);
                 }
-            }
-        });
-    }
+            })
+            .catch((err) => {
+                console.error(err);
+            })
 
+    }
+    //secret restart command
     if (message.content === `${prefix}restart`) {
         message.channel.send("Resetting...")
         client.destroy();

@@ -4,17 +4,18 @@
   "description": "A discord bot that fetches information from the wizard of legend wiki",
   "main": "tomi.js",
   "engines": {
-	"node": "8.x",
-	"npm": "*"
+    "node": "8.x",
+    "npm": "*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	"start": "node tomi.js"
+    "start": "node tomi.js"
   },
   "author": "Bachoo",
   "license": "MIT",
   "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
     "discord.js": "^11.3.2",
-    "request": "^2.87.0"
+    "request-promise": "^4.2.2"
   }
 }
