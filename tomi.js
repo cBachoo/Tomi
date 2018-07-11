@@ -1,6 +1,7 @@
 /**
  * @author Bachoo
  * @description Main entry file - a discord bot that fetches information from the wizard of legend wiki
+ * @version 0.0.5
  */
 
 //libraries
