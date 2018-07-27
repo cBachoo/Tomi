@@ -1,0 +1,9 @@
+__**Tomi Release Update V.1.6 – July 27th, 2018**__
+
+Hey guys, back with another Tomi update! Thanks for using the bot! Not that much added except robe/outfit info to the bot!
+
+**=== Changes === **
+
+:radio_button: Robe/Outfit info added. That's right ALL the robes (small attention to detail: but the embed color is the same color as the outfit too (i'd thought thats a nice thing to add too)) 
+
+:radio_button: Still rewriting parts of Tomi's backend to make sure things are smooth and so things don't get deappreciated again.

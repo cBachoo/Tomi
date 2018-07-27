@@ -3,6 +3,19 @@
 t!help - This current command!
 t!invite - A link that you can invite me to your server!
 t!patch or t!patchnotes - The latest updates on the bot!
-t!______ <---- this can be any relic/arcana in the game! (note: "outfit" and "melee" commands are in the works!)
+t!______ <---- this can be any relic/arcana in the game! (note: "melee" command is in the works!)
+
+// === Outfit Commands === //
+t!hope
+t!patience
+t!vigor
+t!grit
+t!tempo
+t!pace
+t!shift
+t!awe
+t!rule
+t!venture
+t!pride
 
 if you are having problems with a certain command, or issue with the bot in general, please DM **Bachoo#0001**!

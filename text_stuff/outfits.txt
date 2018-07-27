@@ -1,0 +1,23 @@
++ 5% Max health + 8% Run speed + 5% Damage + 6% Crit chance -- Has no effect until you unlock the Vigor, Venture, Pace, Awe, and Rule outfits.
+
++ 5% Max health + 8% Run speed + 4% Armor + 5% Evade  -- Has no effect until you unlock the Vigor, Venture, Grit, Shift, and Tempo outfits.
+
++ 10% Max health + 1 Defense
+
++ 8% Armor + 1 Defense  -- Armor and Defense are not the same stats.
+
+- 12% Cooldowns + 8% Run speed 
+
++ 16% Run speed + 5% Evade
+
++ 10% Evade + 6% Crit chance
+
++ 12% Crit chance + 20% Crit damage
+
++ 10% Damage + 4% Armor
+
++ 10% Damage + 16% Run speed - 12% Cooldowns  - 40% Max health  -- Becomes available for purchase after defeating a council member for the first time. If Savile is used in the trials, max health will '''not''' be affected.
+
+Reduces max health to 1, Shields disabled.  -- Available for purchase upon defeating [[Master Sura]]
+
++ 5% Max health +12% Run speed +8% Evade -8% Cooldowns  -- Purchased from Savile in the Plaza for 5 gems. This alteration will overwrite all other effects from the outfit you are currently wearing. Pride outfit cannot be modified. This effect will disappear after your next run, and the outfit will return to normal.
