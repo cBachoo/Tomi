@@ -1,5 +1,3 @@
-**My Current commands are:**
-
 t!help - This current command!
 t!invite - A link that you can invite me to your server!
 t!patch or t!patchnotes - The latest updates on the bot!
