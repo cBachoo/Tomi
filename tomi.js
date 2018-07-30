@@ -1,7 +1,7 @@
 /**
  * @author Bachoo
  * @description Main entry file - a discord bot that fetches information farom the wizard of legend wiki
- * @version 1.6
+ * @version 1.7
  */
 
 //libraries
@@ -24,6 +24,7 @@ for (const file of commandFiles) {
 const { prefix, token } = require('./botconfig.json');
 const patch = fs.readFileSync('./patch.txt');
 const helptxt = fs.readFileSync('./help.txt');
+const meleetxt = fs.readFileSync('./melee.txt');
 
 //called when bot logs in
 client.on('ready', () => {
@@ -69,9 +70,10 @@ client.on('message', message => {
         client.destroy();
         client.login(token);
         return;
-
     } else if (message.content.toLowerCase() === `${prefix}help`) {
         client.commands.get('help').execute(message, Discord, client, helptxt)
+    } else if (message.content.toLocaleLowerCase() === `${prefix}melee`) {
+        client.commands.get('melee').execute(message, Discord, meleetxt);
     } else if (message.content.toLowerCase() === `${prefix}patch`) {
         client.commands.get('patch').execute(message, Discord, client, patch);
         // ===================== ROBE STUFF =========================================        
@@ -142,7 +144,7 @@ client.on('message', message => {
                     var embed = new Discord.RichEmbed()
                         .setColor("99cff")
                         .setTitle("You searched for: " + raw)
-                        .setFooter("Guide developed and maintained by Bachoo#0001")
+                        .setFooter("Tomi developed and maintained by Bachoo#0001")
                         .setDescription("**Result**: " + desc)
                         .setThumbnail(img);
 

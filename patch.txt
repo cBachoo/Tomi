@@ -1,9 +1,10 @@
-__**Tomi Release Update V.1.6 – July 27th, 2018**__
+__**Tomi Release Update V.1.7 – July 30th, 2018**__
 
-Hey guys, back with another Tomi update! Thanks for using the bot! Not that much added except robe/outfit info to the bot!
+Hey guys, back with another Tomi update! Thanks for using the bot! :heart:
+It's only been a few days since I last updated Tomi, but I have a *lot* of free time atm.
 
 **=== Changes === **
 
-:radio_button: Robe/Outfit info added. That's right ALL the robes (small attention to detail: but the embed color is the same color as the outfit too (i'd thought thats a nice thing to add too)) 
+:radio_button: *New* t!melee command - were you wondering what arcana goes with the dark katana relic? look no further because Tomi's got you covered now! 
 
-:radio_button: Still rewriting parts of Tomi's backend to make sure things are smooth and so things don't get deappreciated again.
+:radio_button: I completely rewrote tomi's backend (again), he now has modular commands, splitting everything up into seperate files in order for me to keep track of everything better :thumbsup: 
