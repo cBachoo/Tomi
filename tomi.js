@@ -132,7 +132,8 @@ client.on('message', message => {
                 var idf = rawdesc.indexOf("Description");
                 var lidf = rawdesc.indexOf("}]");
                 //finished description
-                var desc = rawdesc.slice(idf + 33, lidf - 3);
+                var unformdesc = rawdesc.slice(idf + 33, lidf - 3);
+                var desc = unformdesc.replace(/\\n/g, '.');
                 //finished image
                 var img = body.query.pages[pageid].original.source;
 
