@@ -83,7 +83,7 @@ client.on('message', message => {
         client.commands.get('hope').execute(message, Discord, raw);
     } else if (message.content.toLowerCase() === `${prefix}patience`) {
         client.commands.get('patience').execute(message, Discord, raw);
-    } else if (message.content.toLowerCase() === `${prefix}vigor`) {
+    } else if (message.content.toLowerCase() === `${prefix}vigor`) {    
         client.commands.get('vigor').execute(message, Discord, raw);
     } else if (message.content.toLowerCase() === `${prefix}grit`) {
         client.commands.get('grit').execute(message, Discord, raw);
