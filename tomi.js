@@ -54,7 +54,7 @@ client.on('message', message => {
 
     var rawarry = rawmessage.toLocaleLowerCase().split(' ');
     for (var x = 0; x < rawarry.length; x++) {
-        if (rawarry[x].valueOf() === 'of') {
+        if (rawarry[x].valueOf() === 'of' || rawarry[x].valueOf() === 'the') {
             //do nothing
         } else {
             rawarry[x] = rawarry[x].charAt(0).toLocaleUpperCase() + rawarry[x].substr(1);
