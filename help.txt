@@ -2,6 +2,7 @@ t!help - This current command!
 t!invite - A link that you can invite me to your server!
 t!patch or t!patchnotes - The latest updates on the bot!
 t!melee - All the melee arcana in the game!
+t!countdown - A countdown to the DLC of the game! (Note: no revealed date, its currently set to Dec 31st, 2018)
 t!______ <---- this can be any relic/arcana in the game! 
 
 // === Outfit Commands === //

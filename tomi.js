@@ -72,6 +72,8 @@ client.on('message', message => {
         return;
     } else if (message.content.toLowerCase() === `${prefix}help`) {
         client.commands.get('help').execute(message, Discord, client, helptxt)
+    } else if (message.content.toLowerCase() === `${prefix}countdown`) {
+        client.commands.get('countdown').execute(message, Discord, client);
     } else if (message.content.toLocaleLowerCase() === `${prefix}invite`) {
         client.commands.get('invite').execute(message);
     } else if (message.content.toLocaleLowerCase() === `${prefix}melee`) {
