@@ -19,6 +19,7 @@ module.exports = {
             .setDescription("\n" + days + "d " + hours + "h " + minutes + "m ")
             .setThumbnail(client.user.displayAvatarURL);
 
+        message.channel.send("NOTICE -- It's set to Jan 1st because there is **NO CONFIRMED** date of the dlc yet.")
         message.channel.send(embed);
     }
 }
