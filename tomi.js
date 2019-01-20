@@ -54,7 +54,7 @@ client.on('message', message => {
 
     var rawarry = rawmessage.toLocaleLowerCase().split(' ');
     for (var x = 0; x < rawarry.length; x++) {
-        if (rawarry[x].valueOf() === 'of' || rawarry[x].valueOf() === 'the' || rawarry[x].valueOf === 'on') {
+        if (rawarry[x].valueOf() === 'of' || rawarry[x].valueOf() === 'the' || rawarry[x].valueOf === 'on' || rawarry[x].valueOf === 'and') {
             //do nothing, we dont want this capitalized
         } else {
             //capitalise things for the link
