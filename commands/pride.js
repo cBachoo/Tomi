@@ -1,7 +1,7 @@
 module.exports = {
     name: 'pride',
     execute(message, Discord, raw){
-        var img = "https://d1u5p3l4wpay3k.cloudfront.net/wizardoflegend_gamepedia_en/b/b3/Pride.png?version=ca18161b1336d780e315ae2ac508220c";
+        var img = "https://c-4tvylwolbz88x24nhtlwlkphx2ejbyzljkux2ejvt.g00.gamepedia.com/g00/3_c-4dpghykvmslnluk.nhtlwlkph.jvt_/c-4TVYLWOLBZ88x24oaawzx3ax2fx2fnhtlwlkph.jbyzljku.jvtx2fdpghykvmslnluk_nhtlwlkph_lux2fix2fi0x2fWypkl.wunx3fclyzpvux3d838i8i02m63i045li1k0i766i60h8217_$/$/$/$/$?i10c.ua=1&i10c.dv=21";
         var embed = new Discord.RichEmbed()
             .setColor("658294") //default TODO - CHANGE COLOR TO ROBE COLOR
             .setFooter("Tomi developed and maintained by Bachoo#0001")

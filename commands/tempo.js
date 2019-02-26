@@ -1,7 +1,7 @@
 module.exports = {
     name: 'tempo',
     execute(message, Discord, raw){
-        var img = "https://d1u5p3l4wpay3k.cloudfront.net/wizardoflegend_gamepedia_en/f/fa/Tempo.png?version=e18b0f53f38c387d85d0cb693854ed30";
+        var img = "https://c-4tvylwolbz88x24nhtlwlkphx2ejbyzljkux2ejvt.g00.gamepedia.com/g00/3_c-4dpghykvmslnluk.nhtlwlkph.jvt_/c-4TVYLWOLBZ88x24oaawzx3ax2fx2fnhtlwlkph.jbyzljku.jvtx2fdpghykvmslnluk_nhtlwlkph_lux2fmx2fmhx2fAltwv.wunx3fclyzpvux3d88h7ij94ki56i214325029677j1807h2_$/$/$/$/$?i10c.ua=1&i10c.dv=21";
         var embed = new Discord.RichEmbed()
             .setColor("62b678") //default TODO - CHANGE COLOR TO ROBE COLOR
             .setFooter("Tomi developed and maintained by Bachoo#0001")
