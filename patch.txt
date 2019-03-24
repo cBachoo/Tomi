@@ -1,10 +1,12 @@
-__**Tomi Release Update V.1.7 – July 30th, 2018**__
+__**Tomi Release Update V.1.8 – March 24th, 2019**__
 
 Hey guys, back with another Tomi update! Thanks for using the bot! :heart:
-It's only been a few days since I last updated Tomi, but I have a *lot* of free time atm.
+It's been a while since I last updated Tomi, but with the new patch comes new things!
 
 **=== Changes === **
 
-:radio_button: *New* t!melee command - were you wondering what arcana goes with the dark katana relic? look no further because Tomi's got you covered now! 
+:radio_button: *New* Robe commands, t!spirit, t!fury, and t!fall are here!
 
-:radio_button: I completely rewrote tomi's backend (again), he now has modular commands, splitting everything up into seperate files in order for me to keep track of everything better :thumbsup: 
+:radio_button: I'm still working on updating the wiki with the new info, but most of the relics as of today should be searchable now!
+
+:radio_button: It was fun, but the t!countdown command is now gone... 

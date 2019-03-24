@@ -73,8 +73,6 @@ client.on('message', message => {
         return;
     } else if (message.content.toLowerCase() === `${prefix}help`) {
         client.commands.get('help').execute(message, Discord, client, helptxt)
-    } else if (message.content.toLowerCase() === `${prefix}countdown`) {
-        client.commands.get('countdown').execute(message, Discord, client);
     } else if (message.content.toLocaleLowerCase() === `${prefix}invite`) {
         client.commands.get('invite').execute(message);
     } else if (message.content.toLocaleLowerCase() === `${prefix}melee`) {
@@ -86,7 +84,7 @@ client.on('message', message => {
         client.commands.get('hope').execute(message, Discord, raw);
     } else if (message.content.toLowerCase() === `${prefix}patience`) {
         client.commands.get('patience').execute(message, Discord, raw);
-    } else if (message.content.toLowerCase() === `${prefix}vigor`) {    
+    } else if (message.content.toLowerCase() === `${prefix}vigor`) {
         client.commands.get('vigor').execute(message, Discord, raw);
     } else if (message.content.toLowerCase() === `${prefix}grit`) {
         client.commands.get('grit').execute(message, Discord, raw);
@@ -104,6 +102,12 @@ client.on('message', message => {
         client.commands.get('venture').execute(message, Discord, raw);
     } else if (message.content.toLowerCase() === `${prefix}pride`) {
         client.commands.get('pride').execute(message, Discord, raw);
+    } else if (message.content.toLowerCase() === `${prefix}spirit`) {
+        client.commands.get('spirit').execute(message, Discord, raw); // =========== new robes ====================//
+    } else if (message.content.toLowerCase() === `${prefix}fury`) {
+        client.commands.get('fury').execute(message, Discord, raw);
+    } else if (message.content.toLowerCase() === `${prefix}fall`) {
+        client.commands.get('fall').execute(message, Discord, raw);
     } else if (message.content.toLowerCase() === `${prefix}savile` || message.content === `${prefix}savile special`) {
         client.commands.get('savile').execute(message, Discord, client, raw);
         // ====================================== DEFAULT COMMMAND --> SEARCHING THROUGH WIKI ===================    
