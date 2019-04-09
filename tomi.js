@@ -21,7 +21,12 @@ for (const file of commandFiles) {
 }
 
 //variables
-const { prefix, token } = require('./botconfig.json');
+//getting the "secret" token from heroku
+var rinfo = fs.readFileSync('botconfig.json').toString();
+var ninfo = JSON.parse(rinfo.replace('Bachoo', process.env.TOKEN));
+const prefix = ninfo.prefix;
+const token = ninfo.token;
+
 const patch = fs.readFileSync('./patch.txt');
 const helptxt = fs.readFileSync('./help.txt');
 const meleetxt = fs.readFileSync('./melee.txt');
