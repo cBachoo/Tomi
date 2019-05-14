@@ -1,7 +1,5 @@
 t!help - This current command!
 t!invite - A link that you can invite me to your server!
-t!patch or t!patchnotes - The latest updates on the bot!
-t!melee - All the melee arcana in the game!
 t!______ <---- this can be any relic/arcana in the game! 
 
 // === Outfit Commands === //
@@ -20,4 +18,4 @@ t!spirit
 t!fury
 t!fall
 
-if you are having problems with a certain command, or issue with the bot in general, please DM **Bachoo#0001**!
+if you are having problems with a certain command, or issue with the bot in general, please DM or @ **Bachoo#0001**!
