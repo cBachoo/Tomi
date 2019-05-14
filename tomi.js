@@ -26,5 +26,6 @@ fs.readdir(`./src/events/`, (err, files) => {
 
 process.on(`unhandledRejection`, console.error);
 
-client.login(config.token)
+//run locally = config.token
+client.login(process.env.TOKEN)
     .then(console.log(`Tomi has started~`));
