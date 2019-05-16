@@ -28,5 +28,6 @@ fs.readdir(`./src/events/`, (err, files) => {
 process.on(`unhandledRejection`, console.error);
 
 //run locally = config.token
-client.login(config.token)
+//run with heroku process.env.TOKEN
+client.login(process.env.TOKEN)
     .then(console.log(`Tomi has started~ prefix: "${config.prefix}"`));
