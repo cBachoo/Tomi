@@ -11,6 +11,7 @@ fs.readdir(`./src/commands/`, (err, files) => {
     files.forEach(file => {
         const fileName = file.split(`.`)[0];
         const props = require(`./src/commands/${file}`);
+        //console.log(fileName, props);
         client.commands.set(fileName, props);
     });
 });
@@ -27,5 +28,5 @@ fs.readdir(`./src/events/`, (err, files) => {
 process.on(`unhandledRejection`, console.error);
 
 //run locally = config.token
-client.login(process.env.TOKEN)
-    .then(console.log(`Tomi has started~`));
+client.login(config.token)
+    .then(console.log(`Tomi has started~ prefix: "${config.prefix}"`));
