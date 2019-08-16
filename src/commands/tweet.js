@@ -55,7 +55,7 @@ module.exports = {
         var interval = setInterval(function(){
             console.log('ping');
             openSheet();
-        }, 60000);
+        }, 300000); //5 minutes each ping
         
     }
 }
