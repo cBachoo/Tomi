@@ -13,7 +13,7 @@ module.exports = async (client, message) => {
         }
     }
     var temp = args.join(' ');
-    console.log(temp);
+    console.log("Command invoked - " + temp);
     var titles = args.join(' ').replace(/ /g, "_");
     //commandName removes first index in array
     const commandName = args.shift().toLowerCase();

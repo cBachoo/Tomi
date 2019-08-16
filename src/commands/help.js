@@ -1,6 +1,6 @@
 const { RichEmbed } = require('discord.js');
 const fs = require('fs');
-const helptxt = fs.readFileSync("./help.txt");
+const helptxt = fs.readFileSync("./src/misc/help.txt");
 //todo REWORK HELP COMMAND
 module.exports = {
     name: 'help',
