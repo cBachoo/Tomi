@@ -3,7 +3,7 @@ const GoogleSpreadsheet = require('google-spreadsheet');
 const { promisify } = require('util');
 const fs = require('fs');
 
-const channelid = "520003258329071646";
+const channelid = "462218715552022539";
 const creds = require('../../tomi_secret.json');
 
 module.exports = {
