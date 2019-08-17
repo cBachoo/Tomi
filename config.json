@@ -1,4 +1,5 @@
 {
     "prefix" : "t!",
-    "token" : "bachoo"
+    "token" : "bachoo",
+    "dev" : false
 }

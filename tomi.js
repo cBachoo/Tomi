@@ -1,6 +1,13 @@
 const fs = require('fs');
 const { Client, Collection } = require('discord.js');
-const config = require("./config.json");
+
+var config;
+//get the right config based on enviromental variables
+if (process.env.NODE_ENV == "dev") {
+    config = require('./dev-config.json');
+} else {
+    config = require('./config.json');
+}
 
 const client = new Client();
 client.config = config;
@@ -27,7 +34,10 @@ fs.readdir(`./src/events/`, (err, files) => {
 
 process.on(`unhandledRejection`, console.error);
 
-//run locally = config.token
-//run with heroku process.env.TOKEN
-client.login(process.env.TOKEN)
+if (config.dev === true) {
+    client.login(config.token)
     .then(console.log(`Tomi has started~ prefix: "${config.prefix}"`));
+} else {
+    client.login(process.env.TOKEN)
+    .then(console.log(`Tomi has started~ prefix: "${config.prefix}"`));
+}

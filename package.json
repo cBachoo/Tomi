@@ -8,8 +8,8 @@
     "npm": "*"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node tomi.js"
+    "start": "set NODE_ENV=release&& node tomi.js",
+    "dev": "set NODE_ENV=dev&& node tomi.js"
   },
   "author": "Bachoo",
   "license": "MIT",
