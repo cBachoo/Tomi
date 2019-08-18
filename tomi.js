@@ -34,6 +34,7 @@ fs.readdir(`./src/events/`, (err, files) => {
 
 process.on(`unhandledRejection`, console.error);
 
+//login using either hidden local token, or heroku's token on the cloud
 if (config.dev === true) {
     client.login(config.token)
     .then(console.log(`Tomi has started~ prefix: "${config.prefix}"`));
