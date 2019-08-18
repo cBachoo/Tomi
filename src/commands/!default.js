@@ -29,6 +29,7 @@ module.exports = {
 
                 //grab description data
                 var rawdesc = JSON.stringify(body.query.pages[pageid].revisions);
+                if (rawdesc === undefined || rawdesc === "" || rawdesc === null) return; // don't bother doing the rest of the steps
                 var idf = rawdesc.indexOf("Description");
                 var lidf = rawdesc.indexOf("}]");
                 //finished description
