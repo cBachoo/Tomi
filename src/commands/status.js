@@ -1,10 +1,7 @@
 module.exports = {
     name: 'status',
     execute(client, message, raw) {
-        client.user.setPresence({
-            game: { name: `Use ${client.config.prefix}help! <3`},
-            status: `online`
-        });
+        client.user.setActivity(`Use ${client.config.prefix}help! <3`);
         console.log("Updated status");
     }
 }
