@@ -1,5 +1,7 @@
 t!help - This current command!
 t!invite - A link that you can invite me to your server!
+t!build - A good build to help you conquer the chaos trials!
+t!wine - A tutorial on how to make some wine!
 t!______ <---- this can be any relic/arcana in the game! 
 
 // === Outfit Commands === //
@@ -18,4 +20,4 @@ t!spirit
 t!fury
 t!fall
 
-if you are having problems with a certain command, or issue with the bot in general, please DM or @ **Bachoo#0001**!
+If you are having problems with a certain command, or issue with the bot in general, please DM or @ **Bachoo#0001**!
