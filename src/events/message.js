@@ -1,8 +1,12 @@
+var path = './src/misc/dict.txt'
+var autocorrect = require('autocorrect')({dictionary: path})
+
 module.exports = async (client, message) => {
     //basic checks
     if (!message.content.startsWith(client.config.prefix) || message.author.bot || message.content.slice(client.config.prefix.length) === "") return;
 
-    const args = message.content.slice(client.config.prefix.length).toLowerCase().split(/ +/);
+    const rawArgs = message.content.slice(client.config.prefix.length).toLowerCase();
+    const args = autocorrect(rawArgs).split(/ +/);
     //format args for API link -- default tomi command
     for (var x = 0; x < args.length; x++) {
         if (args[x].valueOf() === 'of' || args[x].valueOf() === 'the' || args[x].valueOf === 'on' || args[x].valueOf === 'and') {
