@@ -1,392 +1,392 @@
-absolute finale
-aegis charge
-air burst
-air spinner
-airborne slam
-aqua arc
-aqua beam
-aqua breaker
-aqua vortex
-arc sphere
-arcane intervention
-ball lightning
-binary splashdown
-bladed vine
-blazing blitz
-blazing lariat
-blazing onslaught
-blazing vault
-blurring falconry
-bolt claymore
-bolt rail
-bouncing blaze
-bouncing bubble
-bouncing surge
-breaking twister
-bubble barrage
-cardice prime
-cascading blitz
-chaos crusher
-chaotic buster
-chaotic rift
-circuit line
-crashing meteor
-creeping tendrils
-cyclone boomerang
-deferred dynamo
-distortion beam
-dragon arc
-dragon blast
-dragon dive
-dragon surge
-earth knuckles
-earth stomp agent
-earthen aegis
-earthquake axe
-embracing vines
-engulfing fissure
-evading zephyr
-exploding fireball
-explosive charge
-fadeaway rhythm
-fire wall
-flame breath
-flame cleaver
-flame cross
-flame fusion
-flame strike
-flare rush
-frost fan
-frost feint
-frost wing
-frozen bait
-fuelled berserk
-furious tempest
-gale-force alignment
-glacial cross
-grasping earth
-gust burst
-gust volley
-hammer of atlas
-heroic blaze
-heroic leap
-homing flares
-ice dagger
-ice seekers
-ice spear
-ignition drive
-ignition rush
-ion spike
-knockout boulder
-laced lightning
-lightning aspect
-line shock agent
-mach stunner
-magnetic breakers
-magnetic follow-up
-magsphere
-mentis imperium
-mortal coil
-null parade
-obsidian cascade
-perfect storm
-perforating jet
-phantom brigade
-piercing void
-raging inferno
-rapid fire agent
-razor burst
-rebounding icicles
-rip tide
-rippling rupture
-rock n' roll
-rock-solid tomahawk
-rushing typhoon
-scales of babylon
-searing crown
-searing rush
-seismic entry
-shattering strike
-shearing chain
-shock assault
-shock line
-shock nova
-shock wire
-snare track
-snowflake chakrams
-spark array
-spark contact
-spike track
-spiraling typhoon
-stalwart defenders
-star bolt
-stone shot
-storm draft
-surge anchor
-tearing whirlwind
-tectonic drill
-terra ring
-thunder drop
-thunder line
-thundering chain
-tidal blast
-toxic bolas
-toxic trap
-tracer barrage
-volt disc
-volt pinball
-voltaic needle
-ward of flames
-ward of frost
-ward of lightning
-ward of stones
-ward of winds
-water prison
-water pulse agent
-wave front
-whirling tornado
-whirling wind agent
-wind flurry
-wind slash
-aberrant deck
-abhorrent cologne
-absorption coil
-adorable mimic
-agni's sparkler
-albert's formula
-alchemist's stone
-amulet of sundering
-analytical monocle
-ancestral gauntlets
-anchor of burden
-ancient fountain pen
-anemic marker
-antiquated tabi
-arcana rewards card
-armor of greed
-armor of resolve
-assassin's blade
-auditor's talisman
-auger of poetry
-autograph pad
-battery of taranis
-berserker's axe
-berserker's helm
-bladed buckler
-blades of sympathy
-blasting sprite aura
-boots of celerity
-boots of frenzy
-bracers of the beast
-brilliant balloon
-broken plague flask
-c-99 piggy bank
-cabi's bubble gum
-cabi's cinnamon hots
-cabi's citrus sweets
-cabi's cotton candy
-cabi's raw chocolate
-calcifying bonemail
-calvin's sandy shoes
-captain's ring
-cartographer's quill
-cassim's airy cloak
-catalystic tonic
-catalystic vial
-catastrophic codex
-chaos scanner
-chaos visor
-chaotic comedy
-chaotic pendulum
-charming teddy bear
-cobalt firestone
-combo gloves
-conga drum set
-conqueror's belt
-conqueror's cloak
-conqueror's helmet
-covert ops mask
-crimson clover
-critical placebos
-cruel chess clock
-curse eater's mask
-curse eater's vest
-curse eater's watch
-cushioned flip-flops
-dagger of midas
-dark katana
-dated sunglasses
-deafening cymbals
-death's scythe
-demi's teapot
-destructive abacus
-devi's bug spray
-dice of the nemesis
-double edged cestus
-double toil
-double trouble
-ebon wolf's cloak
-elemental pointes
-ella's glass kite
-elven ears
-equestricap
-euphie's shawl
-evening gloves
-fatal firecrackers
-firstborn's gauntlet
-flak gauntlet
-flashy boots
-flashy windbreaker
-fortune cookie
-freezing sprite naya
-friendship bracelet
-fuzzy handwarmers
-gaia's shovel
-giant's heart
-glass cannon
-glove of midas
-gloves of gambit
-golden armor of envy
-golden saber of envy
-graduation bouquet
-graduation cap
-greased boots
-grimoire of ruin
-gummy vitamins
-healing potion
-health care card
-heavy travel jacket
-horned halo
-hummingbird feather
-hunter's stiletto
-hyperbolic train
-idealist's mirror
-ifrit's matchstick
-igniting sprite vesa
-indra's copper pipe
-infinity marble
-insignia of legend
-jewelry box
-journal of midas
-jumper cables
-kali's flower diadem
-large red button
-lastborn's gauntlet
-leemo's leaf
-lei's drum
-limited edition robe
-lonely soul's boots
-lotus froststone
-magician's outfit
-magician's top hat
-magician's wand
-makeshift bridge
-melting pot
-memory chainmail
-mercenary's dagger
-merchant's cart
-mercury's sandals
-messy prescription
-mirror shield
-mobius quill
-museum ticket
-mystic monopole
-nerite shell
-neve's citrine
-neve's emerald
-neve's quartz
-neve's ruby
-neve's sapphire
-nocturnal sundial
-nog's heavenly boots
-noxious dappercap
-ominous loan note
-overpriced insurance
-pandemic pouch
-paralytic venomstone
-paronomasicon
-pathfinder's knapsack
-pathfinder's map
-pazu's favorite hat
-perfect time crystal
-permafrost cube
-phoenix talon
-phyyrnx's hourglass
-plaguing sprite dria
-poem of fiery rime
-pop-up primer
-prescription bottle
-prestigious diploma
-prismatic vambrace
-puffy parka
-quantum capacitor
-raffle ticket
-raspberry cookie box
-reactive vinemail
-regenerative inkwell
-reinforced bracers
-reliable backpack
-relic rewards card
-renewing potion vial
-resolute svalinn
-ring of recycling
-ring of reserves
-roxel's pendulum
-royal flush
-rudra's pinwheel
-rulebook of thieves
-rules of contingency
-sano's headband
-scissors of vitality
-secret wild card
-sharpened stylus
-shiva's water bottle
-sidewinder's badge
-silver spinning top
-singing bowl
-sinister ledger
-sleepy thunderstone
-sparking sprite etra
-special snowflake
-spell thief's socks
-spice rack
-spiked emergency kit
-stanza of flames
-stanza of frost
-starchy parachute
-stealthy haladie
-sturdy shoebox
-stygian turtle shell
-super carrot cake
-super sunscreen
-supply crate
-surefire rocket
-takeout box
-tapping gloves
-tea of mercy
-tears of midas
-tesla coil
-thesis on defense
-three gorges bulwark
-tiny crocodile heart
-titan's equilibrium
-token of commerce
-token of doom
-token of elegance
-token of health
-token of luck
-token of triumph
-token of wealth
-tortoise shield
-tozy's pocket watch
-tracking suit
-unicorn disguise
-unicorn tail
-vampire's eyeglasses
-vampire's fangs
-vicious bunny ears
-volatile gemstone
-wallet of vigor
-wanderer's mechanism
-whimsical explodium
-yuna's storybook
+Absolute Finale
+Aegis Charge
+Air Burst
+Air Spinner
+Airborne Slam
+Aqua Arc
+Aqua Beam
+Aqua Breaker
+Aqua Vortex
+Arc Sphere
+Arcane Intervention
+Ball Lightning
+Binary Splashdown
+Bladed Vine
+Blazing Blitz
+Blazing Lariat
+Blazing Onslaught
+Blazing Vault
+Blurring Falconry
+Bolt Claymore
+Bolt Rail
+Bouncing Blaze
+Bouncing Bubble
+Bouncing Surge
+Breaking Twister
+Bubble Barrage
+Cardice Prime
+Cascading Blitz
+Chaos Crusher
+Chaotic Buster
+Chaotic Rift
+Circuit Line
+Crashing Meteor
+Creeping Tendrils
+Cyclone Boomerang
+Deferred Dynamo
+Distortion Beam
+Dragon Arc
+Dragon Blast
+Dragon Dive
+Dragon Surge
+Earth Knuckles
+Earth Stomp Agent
+Earthen Aegis
+Earthquake Axe
+Embracing Vines
+Engulfing Fissure
+Evading Zephyr
+Exploding Fireball
+Explosive Charge
+Fadeaway Rhythm
+Fire Wall
+Flame Breath
+Flame Cleaver
+Flame Cross
+Flame Fusion
+Flame Strike
+Flare Rush
+Frost Fan
+Frost Feint
+Frost Wing
+Frozen Bait
+Fuelled Berserk
+Furious Tempest
+Gale-force Alignment
+Glacial Cross
+Grasping Earth
+Gust Burst
+Gust Volley
+Hammer of Atlas
+Heroic Blaze
+Heroic Leap
+Homing Flares
+Ice Dagger
+Ice Seekers
+Ice Spear
+Ignition Drive
+Ignition Rush
+Ion Spike
+Knockout Boulder
+Laced Lightning
+Lightning Aspect
+Line Shock Agent
+Mach Stunner
+Magnetic Breakers
+Magnetic Follow-up
+Magsphere
+Mentis Imperium
+Mortal Coil
+Null Parade
+Obsidian Cascade
+Perfect Storm
+Perforating Jet
+Phantom Brigade
+Piercing Void
+Raging Inferno
+Rapid Fire Agent
+Razor Burst
+Rebounding Icicles
+Rip Tide
+Rippling Rupture
+Rock n' Roll
+Rock-solid Tomahawk
+Rushing Typhoon
+Scales of Babylon
+Searing Crown
+Searing Rush
+Seismic Entry
+Shattering Strike
+Shearing Chain
+Shock Assault
+Shock Line
+Shock Nova
+Shock Wire
+Snare Track
+Snowflake Chakrams
+Spark Array
+Spark Contact
+Spike Track
+Spiraling Typhoon
+Stalwart Defenders
+Star Bolt
+Stone Shot
+Storm Draft
+Surge Anchor
+Tearing Whirlwind
+Tectonic Drill
+Terra Ring
+Thunder Drop
+Thunder Line
+Thundering Chain
+Tidal Blast
+Toxic Bolas
+Toxic Trap
+Tracer Barrage
+Volt Disc
+Volt Pinball
+Voltaic Needle
+Ward of Flames
+Ward of Frost
+Ward of Lightning
+Ward of Stones
+Ward of Winds
+Water Prison
+Water Pulse Agent
+Wave Front
+Whirling Tornado
+Whirling Wind Agent
+Wind Flurry
+Wind Slash
+Aberrant Deck
+Abhorrent Cologne
+Absorption Coil
+Adorable Mimic
+Agni's Sparkler
+Albert's Formula
+Alchemist's Stone
+Amulet of Sundering
+Analytical Monocle
+Ancestral Gauntlets
+Anchor of Burden
+Ancient Fountain Pen
+Anemic Marker
+Antiquated Tabi
+Arcana Rewards Card
+Armor of Greed
+Armor of Resolve
+Assassin's Blade
+Auditor's Talisman
+Auger of Poetry
+Autograph Pad
+Battery of Taranis
+Berserker's Axe
+Berserker's Helm
+Bladed Buckler
+Blades of Sympathy
+Blasting Sprite Aura
+Boots of Celerity
+Boots of Frenzy
+Bracers of the Beast
+Brilliant Balloon
+Broken Plague Flask
+C-99 Piggy Bank
+Cabi's Bubble Gum
+Cabi's Cinnamon Hots
+Cabi's Citrus Sweets
+Cabi's Cotton Candy
+Cabi's Raw Chocolate
+Calcifying Bonemail
+Calvin's Sandy Shoes
+Captain's Ring
+Cartographer's Quill
+Cassim's Airy Cloak
+Catalystic Tonic
+Catalystic Vial
+Catastrophic Codex
+Chaos Scanner
+Chaos Visor
+Chaotic Comedy
+Chaotic Pendulum
+Charming Teddy Bear
+Cobalt Firestone
+Combo Gloves
+Conga Drum Set
+Conqueror's Belt
+Conqueror's Cloak
+Conqueror's Helmet
+Covert Ops Mask
+Crimson Clover
+Critical Placebos
+Cruel Chess Clock
+Curse Eater's Mask
+Curse Eater's Vest
+Curse Eater's Watch
+Cushioned Flip-flops
+Dagger of Midas
+Dark Katana
+Dated Sunglasses
+Deafening Cymbals
+Death's Scythe
+Demi's Teapot
+Destructive Abacus
+Devi's Bug Spray
+Dice of the Nemesis
+Double Edged Cestus
+Double Toil
+Double Trouble
+Ebon Wolf's Cloak
+Elemental Pointes
+Ella's Glass Kite
+Elven Ears
+Equestricap
+Euphie's Shawl
+Evening Gloves
+Fatal Firecrackers
+Firstborn's Gauntlet
+Flak Gauntlet
+Flashy Boots
+Flashy Windbreaker
+Fortune Cookie
+Freezing Sprite Naya
+Friendship Bracelet
+Fuzzy Handwarmers
+Gaia's Shovel
+Giant's Heart
+Glass Cannon
+Glove of Midas
+Gloves of Gambit
+Golden Armor of Envy
+Golden Saber of Envy
+Graduation Bouquet
+Graduation Cap
+Greased Boots
+Grimoire of Ruin
+Gummy Vitamins
+Healing Potion
+Health Care Card
+Heavy Travel Jacket
+Horned Halo
+Hummingbird Feather
+Hunter's Stiletto
+Hyperbolic Train
+Idealist's Mirror
+Ifrit's Matchstick
+Igniting Sprite Vesa
+Indra's Copper Pipe
+Infinity Marble
+Insignia of Legend
+Jewelry Box
+Journal of Midas
+Jumper Cables
+Kali's Flower Diadem
+Large Red Button
+Lastborn's Gauntlet
+Leemo's Leaf
+Lei's Drum
+Limited Edition Robe
+Lonely Soul's Boots
+Lotus Froststone
+Magician's Outfit
+Magician's Top Hat
+Magician's Wand
+Makeshift Bridge
+Melting Pot
+Memory Chainmail
+Mercenary's Dagger
+Merchant's Cart
+Mercury's Sandals
+Messy Prescription
+Mirror Shield
+Mobius Quill
+Museum Ticket
+Mystic Monopole
+Nerite Shell
+Neve's Citrine
+Neve's Emerald
+Neve's Quartz
+Neve's Ruby
+Neve's Sapphire
+Nocturnal Sundial
+Nog's Heavenly Boots
+Noxious Dappercap
+Ominous Loan Note
+Overpriced Insurance
+Pandemic Pouch
+Paralytic Venomstone
+Paronomasicon
+Pathfinder's Knapsack
+Pathfinder's Map
+Pazu's Favorite Hat
+Perfect Time Crystal
+Permafrost Cube
+Phoenix Talon
+Phyyrnx's Hourglass
+Plaguing Sprite Dria
+Poem of Fiery Rime
+Pop-up Primer
+Prescription Bottle
+Prestigious Diploma
+Prismatic Vambrace
+Puffy Parka
+Quantum Capacitor
+Raffle Ticket
+Raspberry Cookie Box
+Reactive Vinemail
+Regenerative Inkwell
+Reinforced Bracers
+Reliable Backpack
+Relic Rewards Card
+Renewing Potion Vial
+Resolute Svalinn
+Ring of Recycling
+Ring of Reserves
+Roxel's Pendulum
+Royal Flush
+Rudra's Pinwheel
+Rulebook of Thieves
+Rules of Contingency
+Sano's Headband
+Scissors of Vitality
+Secret Wild Card
+Sharpened Stylus
+Shiva's Water Bottle
+Sidewinder's Badge
+Silver Spinning Top
+Singing Bowl
+Sinister Ledger
+Sleepy Thunderstone
+Sparking Sprite Etra
+Special Snowflake
+Spell Thief's Socks
+Spice Rack
+Spiked Emergency Kit
+Stanza of Flames
+Stanza of Frost
+Starchy Parachute
+Stealthy Haladie
+Sturdy Shoebox
+Stygian Turtle Shell
+Super Carrot Cake
+Super Sunscreen
+Supply Crate
+Surefire Rocket
+Takeout Box
+Tapping Gloves
+Tea of Mercy
+Tears of Midas
+Tesla Coil
+Thesis on Defense
+Three Gorges Bulwark
+Tiny Crocodile Heart
+Titan's Equilibrium
+Token of Commerce
+Token of Doom
+Token of Elegance
+Token of Health
+Token of Luck
+Token of Triumph
+Token of Wealth
+Tortoise Shield
+Tozy's Pocket Watch
+Tracking Suit
+Unicorn Disguise
+Unicorn Tail
+Vampire's Eyeglasses
+Vampire's Fangs
+Vicious Bunny Ears
+Volatile Gemstone
+Wallet of Vigor
+Wanderer's Mechanism
+Whimsical Explodium
+Yuna's Storybook

@@ -4,10 +4,9 @@ var autocorrect = require('autocorrect')({dictionary: path})
 module.exports = async (client, message) => {
     //basic checks
     if (!message.content.startsWith(client.config.prefix) || message.author.bot || message.content.slice(client.config.prefix.length) === "") return;
-
-    const rawArgs = message.content.slice(client.config.prefix.length).toLowerCase();
-    const args = autocorrect(rawArgs).split(/ +/);
-    //format args for API link -- default tomi command
+    //raw message from the user, removing the prefix and splitting on spaces
+    const args = message.content.slice(client.config.prefix.length).toLowerCase().split(/ +/);
+    //format args for API link -- turns things into uppercase
     for (var x = 0; x < args.length; x++) {
         if (args[x].valueOf() === 'of' || args[x].valueOf() === 'the' || args[x].valueOf === 'on' || args[x].valueOf === 'and') {
             //do nothing, we dont want this capitalized
@@ -17,8 +16,13 @@ module.exports = async (client, message) => {
         }
     }
     var temp = args.join(' ');
-    console.log("Command invoked - " + temp);
+    //console.log("Command invoked - " + temp);
     var titles = args.join(' ').replace(/ /g, "_");
+    
+    var auto = autocorrect(args.join(' ').replace(/ /g, '_'));
+    console.log(args)
+    console.log(auto)
+
     //commandName removes first index in array
     const commandName = args.shift().toLowerCase();
     const command = client.commands.get(commandName);

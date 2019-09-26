@@ -7,7 +7,7 @@ module.exports = {
         var embed = new RichEmbed()
             .setColor("658294") 
             .setFooter("Tomi developed and maintained by Bachoo#0001")
-            .setDescription("Reduces max health to 1, Shields disabled.  -- Available for purchase upon defeating *Master Sura*")
+            .setDescription("The Chad Robe; Reduces max health to 1, Shields disabled.  -- Available for purchase upon defeating *Master Sura*")
             .setThumbnail(img)
             .setTitle(raw)
 
