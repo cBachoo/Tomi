@@ -4,7 +4,7 @@ const { RichEmbed } = require('discord.js');
 
 module.exports = {
     name: "bachoo-default",
-    execute(client, message, args, temp){
+    execute(client, message, args, temp, rawAuto){
         const baseurl = "https://wizardoflegend.gamepedia.com";
         const query = "/api.php?action=query&format=json&prop=revisions%7Cpageimages&indexpageids=1&rvprop=content&rvsection=1&rvparse&piprop=original&titles=";
         const titles = args;
@@ -45,7 +45,7 @@ module.exports = {
                 } else {
                     var embed = new RichEmbed()
                         .setColor("99cff")
-                        .setTitle("You searched for: " + temp)
+                        .setTitle("You searched for: " + temp + "... I indexed: " + rawAuto)
                         .setFooter("Tomi developed and maintained by Bachoo#0001")
                         .setDescription("**Result**: " + desc)
                         .setThumbnail(img);

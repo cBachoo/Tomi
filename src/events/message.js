@@ -16,7 +16,7 @@ module.exports = async (client, message) => {
         }
     }
     var temp = args.join(' ');
-    //console.log("Command invoked - " + temp); 
+    console.log("Command invoked - " + temp); 
     var rawAuto = autocorrect(args.join(' '));
     var titles = rawAuto.replace(/ /g, "_");
 
@@ -28,6 +28,6 @@ module.exports = async (client, message) => {
         command.execute(client, message, temp);
     } else {
         //default tomi search command
-        client.commands.get('!default').execute(client, message, titles, temp);
+        client.commands.get('!default').execute(client, message, titles, temp, rawAuto);
     }
 }
