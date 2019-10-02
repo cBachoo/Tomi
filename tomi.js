@@ -13,6 +13,7 @@ const client = new Client();
 client.config = config;
 client.commands = new Collection();
 
+//add commands from the directory
 fs.readdir(`./src/commands/`, (err, files) => {
     if (err) throw err;
     files.forEach(file => {
@@ -22,7 +23,7 @@ fs.readdir(`./src/commands/`, (err, files) => {
         client.commands.set(fileName, props);
     });
 });
-
+//add events from the directory
 fs.readdir(`./src/events/`, (err, files) => {
     if (err) throw err;
     files.forEach(file => {
@@ -31,6 +32,16 @@ fs.readdir(`./src/events/`, (err, files) => {
         client.on(eventName, func.bind(null, client));
     });
 });
+//manually add this event because it needs specific varibles to work
+client.on('messageReactionAdd', (reaction, user) => {
+    //console.log(reaction.message.reply('test'))
+    var emoji = reaction.emoji.name.toLocaleLowerCase();
+    if (emoji.includes('love')) {
+        reaction.message.channel.send("Thanks for the love! <:love:441330592068534277>")
+    } else {
+        console.log('false')
+    }
+}) 
 
 process.on(`unhandledRejection`, console.error);
 
