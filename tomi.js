@@ -32,16 +32,6 @@ fs.readdir(`./src/events/`, (err, files) => {
         client.on(eventName, func.bind(null, client));
     });
 });
-//manually add this event because it needs specific varibles to work
-client.on('messageReactionAdd', (reaction, user) => {
-    console.log(user.username);
-    var emoji = reaction.emoji.name.toLocaleLowerCase();
-    if (emoji.includes('love')) {
-        reaction.message.channel.send(`Thanks for the love, ${user.username}! <:love:441330592068534277>`)
-    } else {
-        console.log('false')
-    }
-}) 
 
 process.on(`unhandledRejection`, console.error);
 
