@@ -5,6 +5,10 @@ t!wine - A tutorial on how to make some wine!
 t!update - Status on the latest Wizard of Legend update!
 t!______ <---- this can be any relic/arcana in the game! 
 
+// === Secret Commands Found === //
+t!devs
+t!bruh
+
 // === Outfit Commands === //
 t!hope
 t!patience

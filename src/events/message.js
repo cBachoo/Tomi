@@ -26,6 +26,8 @@ module.exports = async (client, message) => {
 
     if (command) {
         command.execute(client, message, temp);
+    } else if (temp === 'Good Bot') {
+        client.commands.get('good bot').execute(client, message, temp);
     } else {
         //default tomi search command
         client.commands.get('!default').execute(client, message, titles, temp, rawAuto);
