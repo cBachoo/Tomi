@@ -8,6 +8,7 @@ t!______ <---- this can be any relic/arcana in the game!
 // === Secret Commands Found === //
 t!devs
 t!bruh
+t!good bot
 
 // === Outfit Commands === //
 t!hope
