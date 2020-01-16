@@ -18,7 +18,8 @@ module.exports = async (client, message) => {
     var temp = args.join(' ');
     console.log("Command invoked - " + temp); 
     var rawAuto = autocorrect(args.join(' '));
-    var titles = rawAuto.replace(/ /g, "_");
+    //var titles = rawAuto.replace(/ /g, "_"); //enable this line for autocorrect
+    var titles = temp.replace(/ /g, "_");
 
     //commandName removes first index in array
     const commandName = args.shift().toLowerCase();
