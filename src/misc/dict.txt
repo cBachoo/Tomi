@@ -390,3 +390,68 @@ Wallet of Vigor
 Wanderer's Mechanism
 Whimsical Explodium
 Yuna's Storybook
+
+Bubble Blast
+Calming Flow
+Chaos Reaper
+Chaotic Echoes
+Dragon Circuit
+Entangling Vines
+Fading Petal
+Fiery Yo-yo
+Flame Seekers
+Frost Blade
+Frost Scimitar
+Inferno Beam
+Magma Rush
+Mark of Discord
+Null Flash Agent
+Obsidian Splitter
+Prickly Ballet
+Radiant Blast
+Severing Slash
+Stone Seekers
+Thunder Seekers
+Vacuum Seekers
+Volt Tracer
+Vortex Trap
+
+Amethyst Key
+Arcana Booster Pack
+Archaic Cheat Sheet
+Bach's Escape Key
+Bewitching Glue
+Bounty Hunter's Seal
+Breezy Gray Canvas
+Chrono Glove
+Claws of Tomo
+Curious Relic Cube
+Electrifying Smock
+Elixir of Might
+Emerald Key
+Family Seal
+Fiery Paintbrush
+Gilded Helm
+Gyroscopic Inkwell
+Hardcover Textbook
+Idealist's Scorecard
+Idealist's Vest
+Insulated Vest
+Ironclad Cardholder
+Jade's Chakra Locket
+Jade's Gem Locator
+Jade's Jeweled Tiara
+Megalodon Tooth
+Prismatic Windchime
+Royal Jelly
+Rubber Raincoat
+Ruby Key
+Shark Mask
+Soccer Cleats
+Sparrow Windstone
+Sturdy Wooden Easel
+Tattered Scroll
+Vampire's Cookbook
+Water Cushion
+Watercolor Palette
+Wings of Icarus

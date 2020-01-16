@@ -45,8 +45,8 @@ module.exports = {
                 } else {
                     var embed = new RichEmbed()
                         .setColor("99cff")
-                        //.setTitle("You searched for: " + temp + "... I indexed: " + rawAuto) //enable for autocorrect
-                        .setTitle("You searched for: " + temp)
+                        .setTitle("You searched for: " + temp + "... I indexed: " + rawAuto) //enable for autocorrect
+                        //.setTitle("You searched for: " + temp)
                         .setFooter("Tomi developed and maintained by Bachoo#0001")
                         .setDescription("**Result**: " + desc)
                         .setThumbnail(img);
