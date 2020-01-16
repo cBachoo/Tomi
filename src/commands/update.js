@@ -1,6 +1,6 @@
 module.exports = {
     name: 'update',
     execute(client, message, raw) { 
-        message.channel.send("Thursday:tm:")
+        message.channel.send("**Now**:tm:")
     }
 }
