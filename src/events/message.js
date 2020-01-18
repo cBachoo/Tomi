@@ -4,6 +4,12 @@ var autocorrect = require('autocorrect')({dictionary: path})
 module.exports = async (client, message) => {
     //basic checks
     if (!message.content.startsWith(client.config.prefix) || message.author.bot || message.content.slice(client.config.prefix.length) === "") return;
+    
+    if (message.content.charAt(2) === " ") {
+        //if space is empty after command, will fuck up other potential correct commands, lets not do that
+        message.channel.send("please learn how to use me correctly.")
+        return;
+    }
     //raw message from the user, removing the prefix and splitting on spaces
     const args = message.content.slice(client.config.prefix.length).toLowerCase().split(/ +/);
     //format args for API link -- turns things into uppercase
