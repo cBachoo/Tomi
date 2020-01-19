@@ -25,5 +25,7 @@ t!pride
 t!spirit
 t!fury
 t!fall
+t!level
+t!avarice
 
 If you are having problems with a certain command, or issue with the bot in general, please DM or @ **Bachoo#0001**!

@@ -390,7 +390,6 @@ Wallet of Vigor
 Wanderer's Mechanism
 Whimsical Explodium
 Yuna's Storybook
-
 Bubble Blast
 Calming Flow
 Chaos Reaper
@@ -415,7 +414,6 @@ Thunder Seekers
 Vacuum Seekers
 Volt Tracer
 Vortex Trap
-
 Amethyst Key
 Arcana Booster Pack
 Archaic Cheat Sheet
