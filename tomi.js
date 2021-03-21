@@ -43,3 +43,6 @@ if (config.dev === true) {
     client.login(process.env.TOKEN)
     .then(console.log(`Tomi has started~ prefix: "${config.prefix}"`));
 }
+
+// config = require('./dev-config.json');
+// client.login(config.token)

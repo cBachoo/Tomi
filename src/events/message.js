@@ -15,9 +15,9 @@ module.exports = async (client, message) => {
     //format args for API link -- turns things into uppercase
     for (var x = 0; x < args.length; x++) {
         if (args[x].valueOf() === 'of' || args[x].valueOf() === 'the' || args[x].valueOf === 'on' || args[x].valueOf === 'and') {
-            //do nothing, we dont want this capitalized
+            //do nothing, we dont want these specific words capitalized
         } else {
-            //capitalise things for the link
+            //capitalise other words for the link
             args[x] = args[x].charAt(0).toLocaleUpperCase() + args[x].substr(1);
         }
     }
