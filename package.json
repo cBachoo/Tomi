@@ -3,10 +3,6 @@
   "version": "1.0.0",
   "description": "A discord bot that fetches information from the wizard of legend wiki",
   "main": "tomi.js",
-  "engines": {
-    "node": "8.x",
-    "npm": "*"
-  },
   "scripts": {
     "start": "set NODE_ENV=release&& node tomi.js",
     "dev": "set NODE_ENV=dev&& node tomi.js"
