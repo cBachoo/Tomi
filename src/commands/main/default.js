@@ -10,10 +10,11 @@ module.exports = {
         var query = `/api.php?action=query&format=json&prop=imageinfo%7Crevisions&titles=File:${titles}.png|${titles}&iiprop=url&iilimit=5&rvprop=content&rvslots=main&rvsection=1`
         //quickly send the base url
         var apirequest = baseurl + query;
-        //message.channel.send(`<https://wizardoflegend.gamepedia.com/${titles}>`);
-        message.channel.send(apirequest);
-        console.log(apirequest);
+        message.channel.send(`<https://wizardoflegend.gamepedia.com/${titles}>`);
+        // message.channel.send(apirequest);
+        // console.log(apirequest);
 
+        //begin making the api request
         var options = {
             uri: apirequest,
             transform: function (body) {
