@@ -12,17 +12,20 @@ if (process.env.NODE_ENV == "dev") {
 const client = new Client();
 client.config = config;
 client.commands = new Collection();
+const commandFolders = fs.readdirSync('./src/commands');
 
 //add commands from the directory
-fs.readdir(`./src/commands/`, (err, files) => {
-    if (err) throw err;
-    files.forEach(file => {
-        const fileName = file.split(`.`)[0];
-        const props = require(`./src/commands/${file}`);
-        //console.log(fileName, props);
-        client.commands.set(fileName, props);
-    });
-});
+for (const folder of commandFolders) {
+	fs.readdir(`./src/commands/${folder}`, (err, files) => {
+		if (err) throw err;
+		files.forEach(file => {
+			const fileName = file.split(`.`)[0];
+			const props = require(`./src/commands/${folder}/${file}`);
+			//console.log(fileName, props);
+			client.commands.set(fileName, props);
+		});
+	});
+}
 //add events from the directory
 fs.readdir(`./src/events/`, (err, files) => {
     if (err) throw err;
