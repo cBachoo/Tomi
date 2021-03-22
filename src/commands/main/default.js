@@ -1,6 +1,6 @@
 const request = require('request-promise');
 const cheerio = require('cheerio');
-const { RichEmbed } = require('discord.js');
+const { MessageEmbed } = require('discord.js');
 
 module.exports = {
     name: "default",
@@ -38,7 +38,7 @@ module.exports = {
                 var img = body.query.pages[imgPageId].imageinfo[0].url; //final image of query
 
                 //send the embed
-                var embed = new RichEmbed()
+                var embed = new MessageEmbed()
                     .setColor("99cff")
                     .setTitle("You searched for: " + temp + "... I indexed: " + rawAuto) //enable for autocorrect
                     .setFooter("Tomi developed and maintained by Bachoo#0001")
