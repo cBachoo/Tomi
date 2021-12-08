@@ -7,7 +7,7 @@ module.exports = {
         var embed = new MessageEmbed()
             .setColor("a18a73") 
             .setFooter("Tomi developed and maintained by Bachoo#0001")
-            .setDescription("+ 8% Armor + 1 Defense  -- Armor and Defense are not the same stats.")
+            .setDescription("+ 10% Armor + 10% Healing Received")
             .setThumbnail(img)
             .setTitle(raw)
 

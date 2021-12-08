@@ -7,7 +7,7 @@ module.exports = {
         var embed = new MessageEmbed()
             .setColor("ac65a5") 
             .setFooter("Tomi developed and maintained by Bachoo#0001")
-            .setDescription("+ 10% Max health + 25% healing receieved")
+            .setDescription("+ 20% Max health + 10% Crit heal")
             .setThumbnail(img)
             .setTitle(raw)
 

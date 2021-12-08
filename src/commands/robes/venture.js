@@ -7,7 +7,7 @@ module.exports = {
         var embed = new MessageEmbed()
             .setColor("3d525c") 
             .setFooter("Tomi developed and maintained by Bachoo#0001")
-            .setDescription("+ 10% Damage + 16% Run speed - 12% Cooldowns  - 40% Max health  -- Becomes available for purchase after defeating a council member for the first time. If Savile is used in the trials, max health will **not** be affected.")
+            .setDescription("+ 10% Damage + 10% Run speed - 10% Cooldowns  - 40% Max health  -- Becomes available for purchase after defeating a council member for the first time. If Savile is used in the trials, max health will **not** be affected.")
             .setThumbnail(img)
             .setTitle(raw)
 

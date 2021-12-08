@@ -7,7 +7,7 @@ module.exports = {
         var embed = new MessageEmbed()
             .setColor("f4c41c") 
             .setFooter("Tomi developed and maintained by Bachoo#0001")
-            .setDescription("+ 12% Crit chance + 20% Crit damage")
+            .setDescription("+ 10% Crit chance + 25% Crit damage")
             .setThumbnail(img)
             .setTitle(raw)
 

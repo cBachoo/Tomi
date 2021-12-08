@@ -7,7 +7,7 @@ module.exports = {
         var embed = new MessageEmbed()
             .setColor("a8282f") 
             .setFooter("Tomi developed and maintained by Bachoo#0001")
-            .setDescription("+ 5% Max health + 8% Run speed + 5% Damage + 6% Crit chance -- Has no effect until you unlock the Vigor, Venture, Pace, Awe, and Rule outfits.")
+            .setDescription("+ 5% Max health + 10% Run speed + 5% Damage + 5% Crit chance -- Has no effect until you unlock the Vigor, Venture, Pace, Awe, and Rule outfits.")
             .setThumbnail(img)
             .setTitle(raw)
 

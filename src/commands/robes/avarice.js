@@ -7,7 +7,7 @@ module.exports = {
         var embed = new MessageEmbed()
             .setColor("a59e97") 
             .setFooter("Tomi developed and maintained by Bachoo#0001")
-            .setDescription("+15% Gold gain, +1% gem gain")
+            .setDescription("+10% Gold gain, +1 Gem Gain")
             .setThumbnail(img)
             .setTitle(raw)
 

@@ -7,7 +7,7 @@ module.exports = {
         var embed = new MessageEmbed()
             .setColor("798e43") 
             .setFooter("Tomi developed and maintained by Bachoo#0001")
-            .setDescription("+ 16% Run speed + 5% Evade")
+            .setDescription("+ 16% Run speed - 30% Sprint delay")
             .setThumbnail(img)
             .setTitle(raw)
 
