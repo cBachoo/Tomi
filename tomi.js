@@ -1,5 +1,6 @@
 const fs = require('fs');
 const { Client, Collection } = require('discord.js');
+const { REST } = require('@discordjs/rest');
 
 var config;
 //get the right config based on enviromental variables
@@ -13,6 +14,9 @@ const client = new Client();
 client.config = config;
 client.commands = new Collection();
 const commandFolders = fs.readdirSync('./src/commands');
+
+//rest config stuff for slash commands
+const rest = new REST({version: '10'}).setToken(config.token);
 
 //add commands from the directory
 for (const folder of commandFolders) {

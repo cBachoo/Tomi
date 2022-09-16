@@ -1,4 +1,9 @@
+const { SlashCommandBuilder } = require('discord.js');
+
 module.exports = {
+    data: new SlashCommandBuilder()
+        .setName('easymod')
+        .setDescription('a very small and brief tutorial on how to add you own robes to the game'),
     name: 'easymod',
     execute(client, message, raw) {
         message.channel.send(`

@@ -35,6 +35,6 @@ module.exports = async (client, message) => {
         command.execute(client, message, temp);
     } else {
         //default tomi search command
-        client.commands.get('default').execute(client, message, titles, temp, rawAuto);
+        client.commands.get('search').execute(client, message, titles, temp, rawAuto);
     }
 }

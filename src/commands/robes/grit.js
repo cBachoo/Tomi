@@ -1,8 +1,13 @@
 const { MessageEmbed } = require('discord.js');
 
+const { SlashCommandBuilder } = require('discord.js');
+
 module.exports = {
+    data: new SlashCommandBuilder()
+        .setName('grit')
+        .setDescription('the grit robe'),
     name: 'grit',
-    execute(client, message, raw){
+    async execute(client, message, raw){
         var img = "https://d1u5p3l4wpay3k.cloudfront.net/wizardoflegend_gamepedia_en/1/17/Grit.png?version=eed9290d397b0dcbf8fe1850a031e67a";
         var embed = new MessageEmbed()
             .setColor("a18a73") 

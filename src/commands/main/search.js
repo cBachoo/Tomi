@@ -2,9 +2,14 @@ const request = require('request-promise');
 const cheerio = require('cheerio');
 const { MessageEmbed } = require('discord.js');
 
+const { SlashCommandBuilder } = require('discord.js');
+
 module.exports = {
-    name: "default",
-    execute(client, message, args, temp, rawAuto) {
+    data: new SlashCommandBuilder()
+        .setName('search')
+        .setDescription('the default tomi search command, this is the one that searches the wiki'),
+    name: "search",
+    async execute(client, message, args, temp, rawAuto) {
         const baseurl = "https://wizardoflegend.gamepedia.com";
         const titles = args;
         var query = `/api.php?action=query&format=json&prop=imageinfo%7Crevisions&titles=File:${titles}.png|${titles}&iiprop=url&iilimit=5&rvprop=content&rvslots=main&rvsection=1`

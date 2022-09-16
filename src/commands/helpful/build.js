@@ -1,4 +1,9 @@
+const { SlashCommandBuilder } = require('discord.js');
+
 module.exports = {
+    data: new SlashCommandBuilder()
+        .setName('build')
+        .setDescription('a good staring build for wizard of legend'),
     name: 'build',
     execute(client, message, raw) {
         

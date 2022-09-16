@@ -1,8 +1,13 @@
 const { MessageEmbed } = require('discord.js');
 
+const { SlashCommandBuilder } = require('discord.js');
+
 module.exports = {
+    data: new SlashCommandBuilder()
+        .setName('shadow')
+        .setDescription('the shadow robe'),
     name: 'shadow',
-    execute(client, message, raw){
+    async execute(client, message, raw){
         var img = "https://static.wikia.nocookie.net/wizardoflegend_gamepedia_en/images/8/8e/Shadow.png/revision/latest?cb=20210801124823";
         var embed = new MessageEmbed()
             .setColor("000100") 

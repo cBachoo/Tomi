@@ -1,8 +1,13 @@
 const { MessageEmbed } = require('discord.js');
 
+const { SlashCommandBuilder } = require('discord.js');
+
 module.exports = {
+    data: new SlashCommandBuilder()
+        .setName('level')
+        .setDescription('the level robe'),
     name: "level",
-    execute(client, message, raw){
+    async execute(client, message, raw){
         var img = "https://gamepedia.cursecdn.com/wizardoflegend_gamepedia_en/3/3d/Level.png?version=f42eb63d86cce4089aa2184416bdfda4"
         var embed = new MessageEmbed()
             .setColor("49486c") 

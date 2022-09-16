@@ -1,8 +1,13 @@
 const { MessageEmbed } = require('discord.js');
 
+const { SlashCommandBuilder } = require('discord.js');
+
 module.exports = {
+    data: new SlashCommandBuilder()
+        .setName('saville')
+        .setDescription('the saville robe'),
     name: 'savile',
-    execute(client, message, raw){
+    async execute(client, message, raw){
         var img = "";
         var embed = new MessageEmbed()
             .setColor("feffff") 
