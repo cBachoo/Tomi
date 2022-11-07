@@ -8,7 +8,7 @@ module.exports = {
         .setName('wine')
         .setDescription('ever wanted to learn how to make wine?'),
     name: 'wine',
-    execute(client, message, raw){
-        message.channel.send(winetxt);
+    async execute(interaction){
+        await interaction.reply(winetxt);
     }
 }

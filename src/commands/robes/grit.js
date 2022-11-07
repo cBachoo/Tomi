@@ -1,5 +1,4 @@
-const { MessageEmbed } = require('discord.js');
-
+const { EmbedBuilder } = require('discord.js');
 const { SlashCommandBuilder } = require('discord.js');
 
 module.exports = {
@@ -7,15 +6,15 @@ module.exports = {
         .setName('grit')
         .setDescription('the grit robe'),
     name: 'grit',
-    async execute(client, message, raw){
-        var img = "https://d1u5p3l4wpay3k.cloudfront.net/wizardoflegend_gamepedia_en/1/17/Grit.png?version=eed9290d397b0dcbf8fe1850a031e67a";
-        var embed = new MessageEmbed()
-            .setColor("a18a73") 
-            .setFooter("Tomi developed and maintained by Bachoo#0001")
-            .setDescription("+ 10% Armor + 10% Healing Received")
+    async execute(interaction){
+        var img = 'https://static.wikia.nocookie.net/wizardoflegend_gamepedia_en/images/1/17/Grit.png/revision/latest?cb=20210801123801';
+        const embed = new EmbedBuilder()
+            .setColor(0xa18a73) 
+            .setFooter({text: 'Tomi developed and maintained by Bachoo#0001'})
+            .setDescription('+ 10% Armor + 10% Healing received')
             .setThumbnail(img)
-            .setTitle(raw)
+            .setTitle('Grit');
 
-        message.channel.send(embed);        
+        await interaction.reply({embeds: [embed] });
     }
 }

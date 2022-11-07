@@ -8,7 +8,7 @@ module.exports = {
         .setName('legion')
         .setDescription('LEGION'),
     name: 'legion',
-    async execute(client, message, raw) {
-        message.channel.send(legion);
+    async execute(interaction) {
+        await interaction.reply(legion);
     }
 }
