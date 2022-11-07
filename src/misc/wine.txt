@@ -1,4 +1,4 @@
-**=============  Making Wine :wine_glass: :wine_glass: :wine_glass: =============**
+**=============  Making Wine :wine_glass: =============**
 *PART 1*
 ```- Select your grapes, tossing out rotten or peculiar-looking grapes.
 - Wash your grapes thoroughly.

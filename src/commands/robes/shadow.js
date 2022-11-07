@@ -1,5 +1,4 @@
-const { MessageEmbed } = require('discord.js');
-
+const { EmbedBuilder } = require('discord.js');
 const { SlashCommandBuilder } = require('discord.js');
 
 module.exports = {
@@ -7,15 +6,15 @@ module.exports = {
         .setName('shadow')
         .setDescription('the shadow robe'),
     name: 'shadow',
-    async execute(client, message, raw){
+    async execute(interaction){
         var img = "https://static.wikia.nocookie.net/wizardoflegend_gamepedia_en/images/8/8e/Shadow.png/revision/latest?cb=20210801124823";
-        var embed = new MessageEmbed()
-            .setColor("000100") 
-            .setFooter("Tomi developed and maintained by Bachoo#0001")
-            .setDescription("Copies the stats of your previously equipped robe, providing only a visual change. Starting the game when Shadow was previously equipped will cause it to have no stats.")
+        const embed = new EmbedBuilder()
+            .setColor(0x000100) 
+            .setFooter({text: 'Tomi developed and maintained by Bachoo#0001'})
+            .setDescription('Copies the stats of your previously equipped robe, providing only a visual change. Starting the game when Shadow was previously equipped will cause it to have no stats.')
             .setThumbnail(img)
-            .setTitle(raw)
+            .setTitle('Shadow');
 
-        message.channel.send(embed);        
+        await interaction.reply({embeds: [embed] });
     }
 }

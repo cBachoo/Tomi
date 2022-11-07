@@ -1,5 +1,5 @@
 const fs = require('fs');
-const { Client, Collection } = require('discord.js');
+const { Client, Collection, GatewayIntentBits } = require('discord.js');
 const { REST } = require('@discordjs/rest');
 
 var config;
@@ -10,7 +10,12 @@ if (process.env.NODE_ENV == "dev") {
     config = require('./config.json');
 }
 
-const client = new Client();
+const client = new Client({
+    intents: [
+        GatewayIntentBits.MessageContent,
+        GatewayIntentBits.GuildMessages
+    ]
+});
 client.config = config;
 client.commands = new Collection();
 const commandFolders = fs.readdirSync('./src/commands');
@@ -20,25 +25,27 @@ const rest = new REST({version: '10'}).setToken(config.token);
 
 //add commands from the directory
 for (const folder of commandFolders) {
-	fs.readdir(`./src/commands/${folder}`, (err, files) => {
-		if (err) throw err;
-		files.forEach(file => {
-			const fileName = file.split(`.`)[0];
-			const props = require(`./src/commands/${folder}/${file}`);
-			//console.log(fileName, props);
-			client.commands.set(fileName, props);
-		});
-	});
+	const commandFiles = fs.readdirSync(`./src/commands/${folder}`).filter(file => file.endsWith('.js'));
+	for (const file of commandFiles) {
+		const command = require(`./src/commands/${folder}/${file}`);
+		client.commands.set(command.data.name, command);
+	}
 }
+
 //add events from the directory
-fs.readdir(`./src/events/`, (err, files) => {
-    if (err) throw err;
-    files.forEach(file => {
-        const eventName = file.split(`.`)[0];
-        const func = require(`./src/events/${file}`);
-        client.on(eventName, func.bind(null, client));
-    });
-});
+const path = require('path');
+const eventsPath = path.join(__dirname, '/src/events');
+const eventFiles = fs.readdirSync(eventsPath).filter(file => file.endsWith('.js'));
+
+for (const file of eventFiles) {
+	const filePath = path.join(eventsPath, file);
+	const event = require(filePath);
+	if (event.once) {
+		client.once(event.name, (...args) => event.execute(...args));
+	} else {
+		client.on(event.name, (...args) => event.execute(...args));
+	}
+}
 
 process.on(`unhandledRejection`, console.error);
 
@@ -51,5 +58,5 @@ if (config.dev === true) {
     .then(console.log(`Tomi has started~ prefix: "${config.prefix}"`));
 }
 
-// config = require('./dev-config.json');
-// client.login(config.token)
+//config = require('./dev-config.json');
+//client.login(config.token)

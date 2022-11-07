@@ -1,33 +1,17 @@
-t!help - This current command!
-t!invite - A link that you can invite me to your server!
-t!update - Status on the latest Wizard of Legend update!
-
-t!build - A good build to help you conquer the chaos trials!
-t!wine - A tutorial on how to make some wine!
-
-// === Cool Commands === //
-t!tutorial - How to preform the tutorial glitch!
-t!easymod - Easy way to get started modding the game.
-
-// == Main Command == //
-t!______ <---- this can be any relic/arcana in the game! 
+// === Main Commands === //
+/help - This current command!
+/search <query> <---- this can be any relic/arcana in the game!
+/invite - A link that you can invite me to your server!
+/update - Status on the latest Wizard of Legend update!
 
 // === Outfit Commands === //
-t!hope
-t!patience
-t!vigor
-t!grit
-t!tempo
-t!pace
-t!shift
-t!awe
-t!rule
-t!venture
-t!pride
-t!spirit
-t!fury
-t!fall
-t!level
-t!avarice
+/<outfit>
+
+// === Cool Commands === //
+/build - A good build to help you conquer the chaos trials! 
+/easymod - Easy way to get started modding the game.
+/tutorial - How to preform the tutorial glitch!
+/wine - A tutorial on how to make some wine!
+/legion - L E G I O N
 
 If you are having problems with a certain command, or issue with the bot in general, please DM or @ **Bachoo#0001**!

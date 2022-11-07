@@ -1,5 +1,4 @@
-const { MessageEmbed } = require('discord.js');
-
+const { EmbedBuilder } = require('discord.js');
 const { SlashCommandBuilder } = require('discord.js');
 
 module.exports = {
@@ -7,15 +6,15 @@ module.exports = {
         .setName('pride')
         .setDescription('the pride robe'),
     name: 'pride',
-    async execute(client, message, raw){
-        var img = "https://c-4tvylwolbz88x24nhtlwlkphx2ejbyzljkux2ejvt.g00.gamepedia.com/g00/3_c-4dpghykvmslnluk.nhtlwlkph.jvt_/c-4TVYLWOLBZ88x24oaawzx3ax2fx2fnhtlwlkph.jbyzljku.jvtx2fdpghykvmslnluk_nhtlwlkph_lux2fix2fi0x2fWypkl.wunx3fclyzpvux3d838i8i02m63i045li1k0i766i60h8217_$/$/$/$/$?i10c.ua=1&i10c.dv=21";
-        var embed = new MessageEmbed()
-            .setColor("658294") 
-            .setFooter("Tomi developed and maintained by Bachoo#0001")
+    async execute(interaction){
+        var img = 'https://static.wikia.nocookie.net/wizardoflegend_gamepedia_en/images/b/b3/Pride.png/revision/latest?cb=20180514042132';
+        const embed = new EmbedBuilder()
+            .setColor(0x658294) 
+            .setFooter({text: 'Tomi developed and maintained by Bachoo#0001'})
             .setDescription("The Chad Robe; Reduces max health to 1, Shields disabled.  -- Available for purchase upon defeating *Master Sura*")
             .setThumbnail(img)
-            .setTitle(raw)
+            .setTitle('Pride');
 
-        message.channel.send(embed);      
+        await interaction.reply({embeds: [embed] });
     }
 }
