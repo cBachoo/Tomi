@@ -8,7 +8,7 @@ module.exports = {
 
 		// TODO fix presence not showing, although we've moved away from prefixes...
         client.user.setPresence({
-            game: { name: `Use ${client.config.prefix}help! <3`},
+            game: { name: `Use ${process.env.PREFIX}help! <3`},
             status: `online`
 	    });
     }

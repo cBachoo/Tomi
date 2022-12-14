@@ -7,11 +7,11 @@ Grabs wiki information and packs it back into a nice 'lil embed :)
 # setting up
 fork the repo into your own account
 
-create a `dev-config.json` file and format it the same way as `config.json`, make sure `"dev":true`
+Add your discord token to the `.env` file
 
-install dependencies `npm i`
+install dependencies using `npm i`
 
-run the program in the dev mode `npm run dev` 
+run the program using `node tomi.js` 
 
 # contributing
 
