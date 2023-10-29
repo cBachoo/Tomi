@@ -7,7 +7,7 @@ Grabs wiki information and packs it back into a nice 'lil embed :)
 # setting up: self-hosting on local machine
 fork the repo into your own account
 
-Add your discord token to the `.env` file:
+Add your discord token to the `.env` file (create if it does not exist):
 ```
 TOKEN=
 PREFIX=t!
