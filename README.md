@@ -17,10 +17,13 @@ install dependencies using `npm i`
 
 run the program using `node tomi.js` 
 
-#setting up docker
+# setting up docker
 
 1. Make sure you're in the root directory of the project, then run `docker build . -t tomi`
-2. Run the command: `docker run -d --name tomi --restart unless-stopped -e "TOKEN=YOUR TOKEN HERE" tomi`
+2. Run the command: 
+```
+docker run -d --name tomi --restart unless-stopped -e "TOKEN=ASDASDASD" -e "PREFIX=t!" tomi
+```
 
 # contributing
 
