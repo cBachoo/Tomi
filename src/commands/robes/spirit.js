@@ -11,7 +11,7 @@ module.exports = {
         const embed = new EmbedBuilder()
             .setColor(0xac65a5) 
             .setFooter({text: 'Tomi developed and maintained by Bachoo#0001'})
-            .setDescription('+ 20% Max health + 10% Crit heal')
+            .setDescription('+ 20% Healing Recieved + 10%  Crit Heal')
             .setThumbnail(img)
             .setTitle('Spirit')
 
