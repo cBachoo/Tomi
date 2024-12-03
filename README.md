@@ -20,11 +20,11 @@ run the program using `node tomi.js`
 # setting up docker
 
 # setting up docker
-
-1. edit `docker-compose.yml` to have proper environment variables
-2. `chmod +x build.sh`
-3. run `./build.sh`
-
+1. copy `docker-compose.yml` to `docker-compose.override.yml`
+2. edit `docker-compose.override.yml` to have proper environment variables
+3. do NOT modify `docker-compose.yml` at all so git has no issues
+4. `chmod +x build.sh`
+5. run `./build.sh`
 
 # contributing
 
