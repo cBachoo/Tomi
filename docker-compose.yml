@@ -1,0 +1,11 @@
+services:
+  tomi:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: tomi:latest
+    container_name: tomi
+    environment:
+      - PREFIX=t!
+      - TOKEN=YOUR_TOKEN_HERE
+    restart: unless-stopped
